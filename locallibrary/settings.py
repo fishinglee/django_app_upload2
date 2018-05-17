@@ -26,11 +26,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = 'ejd^-3_qtf!@s9s2qvq*x71+9@uqr@80u+v8jqq7gu@*=-q)&%'
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'ejd^-3_qtf!@s9s2qvq*x71+9@uqr@80u+v8jqq7gu@*=-q)&%')
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
-DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
+DEBUG = bool( os.environ.get('DJANGO_DEBUG') )
 
 ALLOWED_HOSTS = ['aiden-django-upload-test.herokuapp.com']
 
