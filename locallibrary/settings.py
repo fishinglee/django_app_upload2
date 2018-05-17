@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'ejd^-3_qtf!@s9s2qvq*x71+9@uqr@
 # DEBUG = True
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['aiden-django-upload-test.herokuapp.com']
 
 
 # Application definition
